@@ -45,3 +45,48 @@ p {
     column-gap: 20px;
 }
 
+
+/* Media queries */
+
+/* Tablet */
+@media screen and (max-width: 1025px){
+    article {
+        width: 90%;
+    }
+
+    h1 {font-size: 2.3rem;}
+    h2 {font-size: 1.6rem;}
+    p {font-size: 1.1rem;}
+
+    .centered-image-article img {
+        max-height: 35vh;
+    }
+
+    .right-image-article,
+    .left-image-article {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right-image-article img,
+    .left-image-article img {
+        width: 100%;
+    }
+
+    .text-content {
+        width: 95%;
+    }
+}
+
+/* smartphone */
+@media screen and (max-width: 650px){
+    article {
+        width: 95%;
+    }
+
+    h1 {font-size: 2rem;}
+    h2 {font-size: 1.6rem;}
+    p {font-size: 1rem;}
+
+
+}
